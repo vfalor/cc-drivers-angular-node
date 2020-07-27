@@ -1,0 +1,324 @@
+﻿<div class="p-4">
+    <div class="container">
+        <h1>Hi {{user.firstName}}!</h1>
+        <p>You're logged in with Redhat Hakathon Divers Travel Planner !!</p>
+        <div class="tm-section tm-bg-img" id="tm-section-1">
+            <div class="tm-bg-white ie-container-width-fix-2">
+                <div class="ie-h-align-center-fix">
+                    <div class="row">
+                        <div class="col-xs-12 ml-auto mr-auto ie-container-width-fix">
+                            <!--<form class="tm-search-form tm-section-pad-2">-->
+                                <form [formGroup]="form" (ngSubmit)="onSubmit()" class="tm-search-form tm-section-pad-2">
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-200">
+                                        <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                        <input name="city" type="text" class="form-control" id="inputDCity" width="150" placeholder="Depart From" autocomplete="off">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-100">
+                                        <i class="fa fa-map-marker fa-2x tm-form-element-icon"></i>
+                                        <input name="city" type="text" class="form-control" id="inputTCity" placeholder="Going To" autocomplete="off">
+                                    </div> 
+                                </div>
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input name="check-in" type="text" class="form-control" id="inputCheckIn" placeholder="Departure Date">
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-50">
+                                        <i class="fa fa-calendar fa-2x tm-form-element-icon"></i>
+                                        <input name="check-out" type="text" class="form-control" id="inputCheckOut" placeholder="Return Date">
+                                    </div>
+                                </div>
+                                <div class="form-row tm-search-form-row">
+                                    <div class="form-group tm-form-element tm-form-element-2">                                            
+                                        <select name="adult" class="form-control tm-select" id="adult">
+                                            <option value="">Adult</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <i class="fa fa-2x fa-user tm-form-element-icon"></i>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-2">                                            
+                                        <select name="children" class="form-control tm-select" id="children">
+                                            <option value="">Children</option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <i class="fa fa-user tm-form-element-icon tm-form-element-icon-small"></i>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                        <select name="room" class="form-control tm-select" id="room">
+                                            <option value="">Room</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                            <option value="7">7</option>
+                                            <option value="8">8</option>
+                                            <option value="9">9</option>
+                                            <option value="10">10</option>
+                                        </select>
+                                        <i class="fa fa-2x fa-bed tm-form-element-icon"></i>
+                                    </div>
+                                    <div class="form-group tm-form-element tm-form-element-2">
+                                        <button type="submit" class="btn btn-primary tm-btn-search">Check Availability</button>
+                                    </div>
+                                  </div>
+                                  <div class="form-row clearfix pl-2 pr-2 tm-fx-col-xs">
+                                      <p class="tm-margin-b-0">Book your tour package with Redhat Hackathon Drivers to have AI Travel Experience.</p>
+                                      <a href="#" class="ie-10-ml-auto ml-auto mt-1 tm-font-semibold tm-color-primary">Need Help?</a>
+                                  </div>
+                            </form>
+                        </div>                        
+                    </div>      
+                </div>
+            </div>                  
+        </div>
+        <!--        
+        <button ng-click="ctrl.name()">click me to angular</button>
+        <button ng-click="name()" class="btn">click me to javascript</button>
+        -->
+
+        <div class="tm-section-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h2 class="tm-section-title">We are here to help you?</h2>
+                        <p class="tm-color-white tm-section-subtitle">Subscribe to get our newsletters</p>
+                        <a href="#" class="tm-color-white tm-btn-white-bordered">Subscribe Newletters</a>
+                    </div>                
+                </div>
+            </div>        
+        </div>
+
+        <div class="tm-section tm-position-relative">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none" class="tm-section-down-arrow">
+                <polygon fill="#ee5057" points="0,0  100,0  50,60"></polygon>                   
+            </svg> 
+            <div class="container tm-pt-5 tm-pb-4">
+                <div class="row text-center">
+                    <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                        <i class="fa tm-fa-6x fa-fort-awesome tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">Indian Destinations</h3>
+                        <p>India’s diverse topography, history and culture offers enough experiences to fulfil any type of wanderlust.</p>
+                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                            
+                        <i class="fa tm-fa-6x fa-plane tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">International Destinations</h3>
+                        <p>The world is now just a hop, skip and jump away and here’s how you can make your travel easier and better.</p>
+                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>                            
+                    </article>
+                    <article class="col-sm-12 col-md-4 col-lg-4 col-xl-4 tm-article">                           
+                        <i class="fa tm-fa-6x fa-life-saver tm-color-primary tm-margin-b-20"></i>
+                        <h3 class="tm-color-primary tm-article-title-1">Safe Travel Programs</h3>
+                        <p>Assured Safe Travel Program in association with Apollo Clinics to enjoy your vacation.</p>
+                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>                           
+                    </article>
+                </div>        
+            </div>
+        </div>
+
+        <div class="tm-section tm-section-pad tm-bg-gray" id="tm-section-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <div class="tm-article-carousel">                            
+                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                <img src="assets/img/img-01.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2">Himachal Tour Packages</h3></header>
+                                    <p>The picturesque state of Himachal Pradesh is nestled between the snow topped Himalayan ranges in North India. Known
+for its panoramic landscapes, this spectacular paradise is blessed with lofty snow peaks, deep gorges, verdant valleys, thundering rivers, enchanting mountain lakes, flower carpeted meadows, ancient temples.</p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Get More Info.</a>
+                                </div>                                
+                            </article>                    
+                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                <img src="assets/img/img-02.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2">Kerala Tour Packages</h3></header>
+                                    <p>Jane Austen wrote, ‘To sit in the shade on a fine day, and look upon verdure, is the perfect refreshment.’ Kerala
+is one such destination that not only rejuvenates but soothes your body, mind and soul. As the dawn cracks, Kerala gleams, beckoning visitors to yet another majestic day in the state. Dolled up in green, Kerala’s allurement lies in its topography.</p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">View Detail</a>
+                                </div>                                
+                            </article>
+                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                <img src="assets/img/img-06.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2">Rajasthan Tour Packages</h3></header>
+                                    <p>Beautiful forts and Havelis, melodious folk music, myriad tales of chivalry, colourful turbans, golden
+deserts, artistic handicrafts, camels and delicious food are the trademarks of the culturally rich Rajasthan. The land is unparalleled when it comes to being a centre stage for culture and heritage in India. Rajasthan is known for its heart-warming hospitality.</p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Info.</a>
+                                </div>                                
+                            </article>
+                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                <img src="assets/img/img-07.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2">Karnataka Tour Packages</h3></header>
+                                    <p>Karnataka is a treasure box holding marvellous jewels like Hampi, Mysore, Coorg, Bengaluru, Gokarna,
+Mangalore and many more! Holding captivating beauty spread in all four directions, Karnataka seems to be crafted by God himself. Karnataka is known as ‘One state many worlds’ as it stands true to all the tales heard about its glory, rich heritage. </p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Detail Info.</a>
+                                </div>                                
+                            </article>                    
+                            <article class="tm-bg-white mr-2 tm-carousel-item">
+                                <img src="assets/img/img-08.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2"> Uttarakhand Tour Packages</h3></header>
+                                    <p>Uttarakhand is among the holiest places in India as it holds a lot of mythological importance. It is where the
+river Ganga enters the Gangetic Plain for the first time. Millions of tourists and devotees flock to Haridwar every year for its cleansing powers. It is widely believed that if a person takes a dip in the holy water at Har Ki Pauri.</p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">Read More</a>
+                                </div>                                
+                            </article>
+                            <article class="tm-bg-white tm-carousel-item">
+                                <img src="assets/img/img-09.jpg" alt="Image" class="img-fluid">
+                                <div class="tm-article-pad">
+                                    <header><h3 class="text-uppercase tm-article-title-2">Hyderabad Tour Packages</h3></header>
+                                    <p>Hyderabad is a treasure box holding marvellous jewels like Char Minar, Bidar, Ramoji Film City, Warangal, Gulbarga,
+Nizamabad and many more! Holding captivating beauty spread in all four directions, Hyderabad seems to be crafted by God himself. Hyderabad is known as ‘One state many worlds’ as it stands true to all the tales heard about its rich glory. 
+</p>
+                                    <a href="#" class="text-uppercase btn-primary tm-btn-primary">More Details</a>
+                                </div>                                
+                            </article>
+                        </div>    
+                    </div>
+                    
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 tm-recommended-container">
+                        <div class="tm-bg-white">
+                            <div class="tm-bg-primary tm-sidebar-pad">
+                                <h3 class="tm-color-white tm-sidebar-title">Recommended Places</h3>
+                                <p class="tm-color-white tm-margin-b-0 tm-font-light">Here’s how you can make your internation travel easier and better</p>
+                            </div>
+                            <div class="tm-sidebar-pad-2">
+                                <a href="#" class="media tm-media tm-recommended-item">
+                                    <img src="assets/img/tn-img-01.jpg" alt="Image">
+                                    <div class="media-body tm-media-body tm-bg-gray">
+                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Europe</h4>
+                                    </div>                                        
+                                </a>
+                                <a href="#" class="media tm-media tm-recommended-item">
+                                    <img src="assets/img/tn-img-02.jpg" alt="Image">
+                                    <div class="media-body tm-media-body tm-bg-gray">
+                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Asia</h4>
+                                    </div>
+                                </a>
+                                <a href="#" class="media tm-media tm-recommended-item">
+                                    <img src="assets/img/tn-img-03.jpg" alt="Image">
+                                    <div class="media-body tm-media-body tm-bg-gray">
+                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">Africa</h4>
+                                    </div>
+                                </a>
+                                <a href="#" class="media tm-media tm-recommended-item">
+                                    <img src="assets/img/tn-img-04.jpg" alt="Image">
+                                    <div class="media-body tm-media-body tm-bg-gray">
+                                        <h4 class="text-uppercase tm-font-semibold tm-sidebar-item-title">South America</h4>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>                            
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tm-bg-video">
+            <div class="overlay">
+                <i class="fa fa-5x fa-play-circle tm-btn-play"></i>
+                <i class="fa fa-5x fa-pause-circle tm-btn-pause"></i>
+            </div>
+            <video controls loop class="tmVideo">
+                <source src="videos/video.mp4" type="video/mp4">
+                <source src="videos/video.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+            <div class="tm-section tm-section-pad tm-bg-img" id="tm-section-5">                                                        
+                <div class="container ie-h-align-center-fix">
+                    <div class="row tm-flex-align-center">
+                        <div class="col-xs-12 col-md-12 col-lg-3 col-xl-3 tm-media-title-container">
+                            <h2 class="text-uppercase tm-section-title-2">ASIA</h2>
+                            <h3 class="tm-color-primary tm-font-semibold tm-section-subtitle-2">Honeymoon Packages</h3>
+                        </div>
+                        <div class="col-xs-12 col-md-12 col-lg-9 col-xl-9 mt-0 mt-sm-3">
+                            <div class="ml-auto tm-bg-white-shadow tm-pad tm-media-container">
+                                <article class="media tm-margin-b-20 tm-media-1">
+                                    <img src="assets/img/img-03.jpg" alt="Image">
+                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                        <h3 class="tm-font-semibold tm-color-primary tm-article-title-3">Singapore Honeymoon Packages</h3>
+                                        <p>Futuristic, self-assured, sleek and opulent, that is Singapore for you. What makes this tiny state so unique is its perfect blend of culture, cuisine, arts, architecture and vibrant buzz. The global city of Singapore preserves the old and build the new simultaneously.</p><a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                                    </div>                                
+                                </article>
+                                <article class="media tm-margin-b-20 tm-media-1">
+                                    <img src="assets/img/img-04.jpg" alt="Image">
+                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                        <h3 class="tm-font-semibold tm-article-title-3">Maldives Honeymoon Packages</h3>
+                                        <p>A tropical island known for ring-shaped coral reefs, crystal clear waters, white sand beaches, and mesmerizing
+views, Maldives is a paradise for the tourists. Maldives offers unforgettable experiences to its guests.</p>
+                                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                                    </div>                                
+                                </article>
+                                <article class="media tm-margin-b-20 tm-media-1">
+                                    <img src="assets/img/img-05.jpg" alt="Image">
+                                    <div class="media-body tm-media-body-1 tm-media-body-v-center">
+                                        <h3 class="tm-font-semibold tm-article-title-3">Bali Honeymoon Packages</h3>
+                                        <p>Have you always imagined your honeymoon to be the perfect blend of culture, adventure and nature? The vibrant island of Indonesia has all the makings of an exquisite romantic escapade, where you can live out the very first chapter of married life.</p>
+                                        <a href="#" class="text-uppercase tm-color-primary tm-font-semibold">Continue reading...</a>
+                                    </div>                                
+                                </article>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>           
+        
+        <div class="tm-section tm-section-pad tm-bg-img tm-position-relative" id="tm-section-6">
+            <div class="container ie-h-align-center-fix">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-7">
+                        <div id="google-map"></div>        
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-5 mt-3 mt-md-0">
+                        <div class="tm-bg-white tm-p-4">
+                            <!--<form action="index.html" method="post" class="contact-form">-->
+                                <form [formGroup]="form" (ngSubmit)="onSubmit()" class="contact-form">
+                                <div class="form-group">
+                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name"  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" id="contact_email" name="contact_email" class="form-control" placeholder="Email"  required/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" id="contact_subject" name="contact_subject" class="form-control" placeholder="Subject"  required/>
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary tm-btn-primary">Send Message Now</button>
+                            </form>
+                        </div>                            
+                    </div>
+                </div>        
+            </div>
+        </div>
+        
+    </div>
+</div>
+
