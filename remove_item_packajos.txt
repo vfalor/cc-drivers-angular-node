@@ -1,0 +1,21 @@
+docker build --tag list travelplanner:1.0
+
+docker build --tag bulletinboard:1.0
+
+
+http://localhost:5360/validateUser?uid=vijay&pwd=ax
+
+
+              "src/assets/js/jquery-1.11.3.min.js",
+              "src/assets/js/popper.min.js",
+              "src/assets/js/bootstrap.min.js",
+              "src/assets/js/datepicker.min.js",
+              "src/assets/js/jquery.singlePageNav.min.js"
+
+
+,
+        "src/assets/js/jquery-1.11.3.min.js": "~1.11.3",
+        "src/assets/js/popper.min.js": "~1.11.3",
+        "src/assets/js/bootstrap.min.js": "~1.11.3",
+        "src/assets/js/datepicker.min.js": "~1.11.3",
+        "src/assets/js/jquery.singlePageNav.min.js": "~1.11.3"
