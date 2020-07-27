@@ -1,0 +1,10 @@
+FROM node:12 AS build-env
+WORKDIR /var/local/site
+".dockerignore"
+#
+**/.git
+**/.svn
+**/wwwroot
+**/bin
+**/obj
+**/out
